@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import HomePage from "./pages/HomePage";
+import ProductListPage from "./pages/ProductListPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import CartPage from "./pages/CartPage";
+import VirtualConsultantPage from "./pages/VirtualConsultantPage";
+import DIYResourcesPage from "./pages/DIYResourcesPage";
+import Header from "./components/common/Header/Header";
+import Footer from "./components/common/Footer/Footer";
+import "./styles/global.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/products" component={ProductListPage} />
+            <Route path="/products/:id" component={ProductDetailPage} />
+            <Route path="/cart" component={CartPage} />
+            <Route path="/consultant" component={VirtualConsultantPage} />
+            <Route path="/diy-resources" component={DIYResourcesPage} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 

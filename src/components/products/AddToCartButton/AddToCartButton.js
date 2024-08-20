@@ -1,10 +1,12 @@
 import React from "react";
+import { useCart } from "../../../context/CartContext";
 import styles from "./AddToCartButton.module.css";
 
 const AddToCartButton = ({ product }) => {
+  const { dispatch } = useCart();
+
   const handleAddToCart = () => {
-    // In a real app, this would dispatch an action to add the product to the cart
-    console.log(`Added ${product.name} to cart`);
+    dispatch({ type: "ADD_TO_CART", payload: product });
   };
 
   return (
