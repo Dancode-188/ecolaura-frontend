@@ -1,0 +1,47 @@
+.cartSummary {
+    flex: 1;
+    background-color: var(--background-cream);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+}
+
+.impactSection {
+    margin-top: var(--spacing-lg);
+    border-top: 1px solid var(--secondary-blue);
+    padding-top: var(--spacing-md);
+}
+
+.impactTitle {
+    font-size: var(--font-size-medium);
+    color: var(--secondary-blue);
+    margin-bottom: var(--spacing-sm);
+}
+
+.checkoutButton {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    margin-top: var(--spacing-lg);
+    transition: background-color 0.3s ease;
+}
+
+.checkoutButton:hover {
+    background-color: var(--secondary-blue);
+}
