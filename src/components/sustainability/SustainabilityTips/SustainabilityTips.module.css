@@ -1,0 +1,30 @@
+.sustainabilityTips {
+    background-color: var(--background-cream);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.tipList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tip {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.tip::before {
+    content: '•';
+    color: var(--secondary-blue);
+    position: absolute;
+    left: 0;
+}
