@@ -1,0 +1,42 @@
+.resourceCard {
+    background-color: var(--text-light);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--box-shadow-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--font-size-medium);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-md);
+}
+
+.difficulty,
+.category,
+.duration {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-xs);
+}
+
+.viewButton {
+    background-color: var(--secondary-blue);
+    color: var(--text-light);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewButton:hover {
+    background-color: var(--primary-green);
+}

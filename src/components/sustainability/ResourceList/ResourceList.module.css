@@ -1,0 +1,13 @@
+.resourceList {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.noResources {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-dark);
+    font-style: italic;
+}
