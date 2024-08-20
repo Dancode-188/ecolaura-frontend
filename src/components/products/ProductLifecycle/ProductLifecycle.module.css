@@ -1,0 +1,32 @@
+.productLifecycle {
+    margin-top: var(--spacing-xl);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.lifecycleList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lifecycleStage {
+    background-color: var(--background-cream);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stageTitle {
+    font-size: var(--font-size-medium);
+    color: var(--secondary-blue);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stageDescription {
+    font-size: var(--font-size-small);
+    line-height: 1.4;
+}

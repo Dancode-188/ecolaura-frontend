@@ -1,0 +1,14 @@
+.addToCartButton {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+    background-color: var(--secondary-blue);
+}
