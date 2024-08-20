@@ -1,0 +1,38 @@
+/* Breakpoints */
+@media (min-width: 576px) {
+    /* Small devices (landscape phones) */
+  }
+
+  @media (min-width: 768px) {
+    /* Medium devices (tablets) */
+  }
+
+  @media (min-width: 992px) {
+    /* Large devices (desktops) */
+  }
+
+  @media (min-width: 1200px) {
+    /* Extra large devices (large desktops) */
+  }
+
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    :root {
+      --font-size-small: 0.75rem;
+      --font-size-medium: 0.875rem;
+      --font-size-large: 1rem;
+      --font-size-xlarge: 1.25rem;
+      --font-size-xxlarge: 1.5rem;
+    }
+  }
+
+  /* Responsive spacing */
+  @media (max-width: 768px) {
+    :root {
+      --spacing-xs: 0.2rem;
+      --spacing-sm: 0.4rem;
+      --spacing-md: 0.8rem;
+      --spacing-lg: 1.2rem;
+      --spacing-xl: 1.6rem;
+    }
+  }
