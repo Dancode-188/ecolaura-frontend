@@ -1,0 +1,11 @@
+.cartItemList {
+    flex: 2;
+    margin-right: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .cartItemList {
+      margin-right: 0;
+      margin-bottom: var(--spacing-lg);
+    }
+}
