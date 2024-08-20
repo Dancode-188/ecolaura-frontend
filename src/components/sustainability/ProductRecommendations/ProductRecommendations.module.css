@@ -1,0 +1,31 @@
+.productRecommendations {
+    flex: 1;
+    padding: var(--spacing-md);
+    background-color: var(--background-cream);
+    border-radius: var(--border-radius-md);
+    margin-left: var(--spacing-lg);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.noRecommendations {
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+.recommendationList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .productRecommendations {
+      margin-left: 0;
+      margin-top: var(--spacing-lg);
+    }
+}
