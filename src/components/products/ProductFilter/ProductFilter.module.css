@@ -1,0 +1,51 @@
+.productFilter {
+    background-color: var(--background-cream);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.filterGroup {
+    margin-bottom: var(--spacing-md);
+}
+
+.filterGroup label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.filterGroup input,
+.filterGroup select {
+    width: 100%;
+    padding: var(--spacing-xs);
+    border: 1px solid var(--secondary-blue);
+    border-radius: var(--border-radius-sm);
+}
+
+.filterButton {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filterButton:hover {
+    background-color: var(--secondary-blue);
+}
+
+@media (min-width: 768px) {
+    .productFilter {
+      width: 250px;
+      margin-right: var(--spacing-lg);
+      margin-bottom: 0;
+    }
+}

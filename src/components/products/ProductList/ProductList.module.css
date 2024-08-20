@@ -1,0 +1,11 @@
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .productList {
+      flex: 1;
+    }
+}
