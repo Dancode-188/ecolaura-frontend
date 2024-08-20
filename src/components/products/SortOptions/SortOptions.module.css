@@ -1,0 +1,24 @@
+.sortOptions {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+}
+
+.sortOptions label {
+    margin-right: var(--spacing-sm);
+    font-weight: bold;
+}
+
+.sortOptions select {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid var(--secondary-blue);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--text-light);
+    font-size: var(--font-size-small);
+}
+
+.sortOptions select:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}

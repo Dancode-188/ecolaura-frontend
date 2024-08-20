@@ -1,0 +1,53 @@
+.advancedFilter {
+    background-color: var(--background-cream);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.advancedFilter h3 {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.filterGroup {
+    margin-bottom: var(--spacing-md);
+}
+
+.filterGroup label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+}
+
+.filterGroup input,
+.filterGroup select {
+    width: 100%;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid var(--secondary-blue);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-small);
+}
+
+.filterGroup input:focus,
+.filterGroup select:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.applyButton {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    transition: background-color 0.3s ease;
+}
+
+.applyButton:hover {
+    background-color: var(--secondary-blue);
+}
