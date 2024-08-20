@@ -1,0 +1,53 @@
+.productRecommendations {
+    background-color: var(--background-cream);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.recommendationList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommendationItem {
+    margin-bottom: var(--spacing-sm);
+}
+
+.productLink {
+    display: block;
+    background-color: var(--text-light);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: background-color 0.3s ease;
+}
+
+.productLink:hover {
+    background-color: var(--secondary-blue);
+    color: var(--text-light);
+}
+
+.productName {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+}
+
+.productPrice {
+    display: block;
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.sustainabilityScore {
+    display: block;
+    font-size: var(--font-size-small);
+    color: var(--text-dark);
+}

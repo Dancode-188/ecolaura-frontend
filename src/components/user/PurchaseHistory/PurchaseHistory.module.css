@@ -1,0 +1,47 @@
+.purchaseHistory {
+    background-color: var(--text-light);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--box-shadow-light);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.purchaseList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.purchaseItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--background-cream);
+}
+
+.purchaseItem:last-child {
+    border-bottom: none;
+}
+
+.purchaseName {
+    flex: 2;
+    font-weight: bold;
+}
+
+.purchaseDate {
+    flex: 1;
+    color: var(--text-dark);
+    font-size: var(--font-size-small);
+}
+
+.purchasePrice {
+    flex: 1;
+    text-align: right;
+    color: var(--secondary-blue);
+    font-weight: bold;
+}
