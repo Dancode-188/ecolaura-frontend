@@ -28,6 +28,14 @@
     margin-bottom: var(--spacing-md);
 }
 
+.sustainabilityInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
 .productDescription {
     font-size: var(--font-size-medium);
     line-height: 1.6;
