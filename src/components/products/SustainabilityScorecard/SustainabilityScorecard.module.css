@@ -1,0 +1,64 @@
+.scorecard {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm);
+    background-color: var(--background-cream);
+    border-radius: var(--border-radius-md);
+}
+
+.score {
+    font-size: var(--font-size-xlarge);
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: var(--spacing-md);
+}
+
+.high {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+}
+
+.medium {
+    background-color: #FFA500;
+    color: var(--text-light);
+}
+
+.low {
+    background-color: #FF4500;
+    color: var(--text-light);
+}
+
+.details {
+    flex: 1;
+}
+
+.detailItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xs);
+}
+
+.detailLabel {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.detailValue {
+    color: var(--secondary-blue);
+}
+
+@media (max-width: 768px) {
+    .scorecard {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .score {
+      margin-bottom: var(--spacing-sm);
+    }
+}

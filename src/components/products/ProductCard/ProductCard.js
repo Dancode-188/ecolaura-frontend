@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SustainabilityScore from "../SustainabilityScore/SustainabilityScore";
-import EcoImpactBadge from "../EcoImpactBadge/EcoImpactBadge";
+import SustainabilityScorecard from "../SustainabilityScorecard/SustainabilityScorecard";
 import styles from "./ProductCard.module.css";
 
 const ProductCard = ({ product }) => {
+  const scorecardDetails = [
+    { label: "Carbon Footprint", value: product.carbonFootprint + " kg" },
+    { label: "Water Usage", value: product.waterUsage + " L" },
+  ];
+
   return (
     <div className={styles.productCard}>
       <img
@@ -14,10 +18,10 @@ const ProductCard = ({ product }) => {
       />
       <h3 className={styles.productName}>{product.name}</h3>
       <p className={styles.productPrice}>${product.price.toFixed(2)}</p>
-      <div className={styles.sustainabilityInfo}>
-        <SustainabilityScore score={product.sustainabilityScore} />
-        <EcoImpactBadge impact={product.ecoImpact} />
-      </div>
+      <SustainabilityScorecard
+        score={product.sustainabilityScore}
+        details={scorecardDetails}
+      />
       <Link to={`/products/${product.id}`} className={styles.viewButton}>
         View Product
       </Link>
