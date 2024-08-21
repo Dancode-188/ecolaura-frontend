@@ -4,6 +4,7 @@ import SustainabilityScore from "../components/products/SustainabilityScore/Sust
 import EcoImpactBadge from "../components/products/EcoImpactBadge/EcoImpactBadge";
 import ProductLifecycle from "../components/products/ProductLifecycle/ProductLifecycle";
 import AddToCartButton from "../components/products/AddToCartButton/AddToCartButton";
+import SustainabilityScorecard from "../components/products/SustainabilityScorecard/SustainabilityScorecard";
 import styles from "./ProductDetailPage.module.css";
 
 // Mock product data (in a real app, this would come from an API)
@@ -45,6 +46,11 @@ const ProductDetailPage = () => {
   const { id } = useParams();
   // In a real app, you would fetch the product data based on the id
 
+  const scorecardDetails = [
+    { label: "Plastic Saved", value: product.ecoImpact.plasticSaved + " g" },
+    { label: "CO2 Reduced", value: product.ecoImpact.co2Reduced + " kg" },
+  ];
+
   return (
     <div className={styles.productDetailPage}>
       <div className={styles.productImage}>
@@ -57,6 +63,10 @@ const ProductDetailPage = () => {
           <SustainabilityScore score={product.sustainabilityScore} />
           <EcoImpactBadge impact={product.ecoImpact} />
         </div>
+        <SustainabilityScorecard
+          score={product.ecoImpact.score}
+          details={scorecardDetails}
+        />
         <p className={styles.productDescription}>{product.description}</p>
         <AddToCartButton product={product} />
         <ProductLifecycle lifecycle={product.lifecycle} />

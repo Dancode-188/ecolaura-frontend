@@ -1,18 +1,21 @@
 import React from "react";
 import styles from "./ProductLifecycle.module.css";
 
-const ProductLifecycle = ({ lifecycle }) => {
+const ProductLifecycle = ({ stages }) => {
   return (
-    <div className={styles.productLifecycle}>
-      <h2 className={styles.title}>Product Lifecycle</h2>
-      <ul className={styles.lifecycleList}>
-        {lifecycle.map((stage, index) => (
-          <li key={index} className={styles.lifecycleStage}>
-            <h3 className={styles.stageTitle}>{stage.stage}</h3>
-            <p className={styles.stageDescription}>{stage.description}</p>
-          </li>
+    <div className={styles.lifecycle}>
+      <h3 className={styles.title}>Product Lifecycle</h3>
+      <div className={styles.timeline}>
+        {stages.map((stage, index) => (
+          <div key={index} className={styles.stage}>
+            <div className={styles.stageIcon}>{index + 1}</div>
+            <div className={styles.stageContent}>
+              <h4 className={styles.stageName}>{stage.name}</h4>
+              <p className={styles.stageDescription}>{stage.description}</p>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
