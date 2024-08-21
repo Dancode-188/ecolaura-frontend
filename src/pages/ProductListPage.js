@@ -12,6 +12,11 @@ const allProducts = [
     price: 12.99,
     category: "bathroom",
     sustainabilityScore: 95,
+    ecoImpact: {
+      score: 95,
+      plasticSaved: 30,
+      co2Reduced: 0.5,
+    },
   },
   {
     id: 2,
@@ -19,6 +24,11 @@ const allProducts = [
     price: 24.99,
     category: "kitchen",
     sustainabilityScore: 90,
+    ecoImpact: {
+      score: 90,
+      plasticSaved: 167,
+      waterSaved: 1000,
+    },
   },
   {
     id: 3,
@@ -26,6 +36,11 @@ const allProducts = [
     price: 89.99,
     category: "living",
     sustainabilityScore: 85,
+    ecoImpact: {
+      score: 90,
+      plasticSaved: 167,
+      waterSaved: 1000,
+    },
   },
   {
     id: 4,
@@ -33,6 +48,11 @@ const allProducts = [
     price: 34.99,
     category: "outdoor",
     sustainabilityScore: 92,
+    ecoImpact: {
+      score: 90,
+      plasticSaved: 167,
+      waterSaved: 1000,
+    },
   },
   // Add more products...
 ];

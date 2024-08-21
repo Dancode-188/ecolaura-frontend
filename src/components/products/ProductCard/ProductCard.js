@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SustainabilityScore from "../SustainabilityScore/SustainabilityScore";
+import EcoImpactBadge from "../EcoImpactBadge/EcoImpactBadge";
 import styles from "./ProductCard.module.css";
 
 const ProductCard = ({ product }) => {
@@ -13,7 +14,10 @@ const ProductCard = ({ product }) => {
       />
       <h3 className={styles.productName}>{product.name}</h3>
       <p className={styles.productPrice}>${product.price.toFixed(2)}</p>
-      <SustainabilityScore score={product.sustainabilityScore} />
+      <div className={styles.sustainabilityInfo}>
+        <SustainabilityScore score={product.sustainabilityScore} />
+        <EcoImpactBadge impact={product.ecoImpact} />
+      </div>
       <Link to={`/products/${product.id}`} className={styles.viewButton}>
         View Product
       </Link>

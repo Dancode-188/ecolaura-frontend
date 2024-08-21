@@ -28,6 +28,14 @@
     margin-bottom: var(--spacing-sm);
 }
 
+.sustainabilityInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+}
+
 .viewButton {
     background-color: var(--secondary-blue);
     color: var(--text-light);
